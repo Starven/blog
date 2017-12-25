@@ -1,0 +1,761 @@
+body{
+    background-color: rgb(238, 238, 238);
+    font-family: 'Questrial', sans-serif;
+}
+
+.autoHeight{
+    height: auto;
+}
+
+.heading-top{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    color: rgb(0, 88, 4);
+    z-index: 100;
+    transition: all 0.5s;
+}
+
+.heading-top h1{
+    position: relative;
+    float: left;
+    top: -35px;
+    color: white;
+    background-color: rgb(118, 50, 63);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.heading-top h1:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.heading-top h3{
+    position: relative;
+    top: -35px;
+    color: black;
+}
+
+.heading-top h3:hover{
+    color: rgb(118, 50, 63);
+    cursor: pointer;
+}
+
+.heading-scrolled{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 75px;
+    padding: 20px;
+    z-index: 100;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.5s;
+    z-index: 400;
+    border-bottom: 2px solid rgb(118, 50, 63);
+}
+
+.heading-scrolled h1{
+    position: relative;
+    float: left;
+    top: -35px;
+    color: white;
+    background-color: rgb(118, 50, 63);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.heading-scrolled h1:hover{
+    color: rgb(118, 50, 63);
+    cursor: pointer;
+}
+
+.heading-scrolled h3{
+    position: relative;
+    top: -35px;
+    color: black;
+}
+
+.heading-scrolled h3:hover{
+    color: rgb(118, 50, 63);
+    cursor: pointer;
+}
+
+.homeBanner{
+    position: fixed;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 41);
+    background-image: url('/assets/melb.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top; 
+
+}
+
+.content-container{
+    position: relative;
+    width: 1121px;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    top: 348px;
+}
+
+@media screen and (max-width: 1220px){
+    .content-container{
+        width: 100%;
+        max-width: 100%;
+        transition: all 0.5s;
+    }
+}
+
+.content{
+    position: relative;
+    top: 100px;
+    left: 0px;
+    width: 1121px;
+    max-width: 100%;
+    min-height: 921px;
+    height: auto;
+    background-color: white;
+    z-index: 200;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.contentBanner{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    max-width: 1121px;
+    height: 52px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.contentBannerSquares{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 52px;
+    background-color: white;
+    padding-top: 2px;
+    
+}
+
+.searchtext{
+    float: left;
+    margin-left: 25px;
+}
+
+.filtertext{
+    float: right;
+}
+
+.search-bar{
+    position: relative;
+    float: left;
+    margin-left: 25px;
+    top: 5px;
+    width: 250px;
+    height: 30px;
+    border-radius: 2px;
+    background-color: rgb(118, 50, 63);
+    color: rgb(180, 180, 180);
+    border: none;
+    padding-left: 5px;
+}
+
+.search-bar::placeholder{
+    color: rgb(180, 180, 180);
+}
+
+.postPrev{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.postPrevHeading{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin: 0 auto;
+    height: 250px;
+    overflow: hidden;
+    border: 2px solid rgb(118, 50, 63);
+}
+
+.diamondboy{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    z-index: 200;
+    top: -51px;
+    left: 75px;
+    transform: rotate(45deg);
+    border-top: 2px solid rgb(118, 50, 63);
+    border-left: 2px solid rgb(118, 50, 63);
+    border-top-left-radius: 5px;
+}
+
+.diamondboy img{
+    position: relative;
+    width: 55px;
+    height: 55px;
+    transform: rotate(-45deg);
+    left: -5px;
+    top: 20px;
+
+}
+
+#InitLetter{
+    position: relative;
+    left: -20px;
+    top: -10px;
+    color: black;
+    text-align: center;
+    transform: rotate(-45deg);
+}
+
+.postPrev h1{
+    position: relative;
+    color: white;
+    top: -305px;
+    text-align: left;
+    padding-left: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(118, 50, 63);
+    border-radius: 5px;
+
+}
+
+.postPrevHeading img{
+    filter: blur(4px);
+    width: 100%;
+    min-width: 750px !important;
+    min-height: 250px;
+   
+}
+
+.postPrevBody{
+    position: relative;
+    top: -150px;
+    padding-top: 25px;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 300;
+}
+
+.postPrevFooter{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    border-top: 1px solid rgb(156, 156, 156);
+    margin-bottom: 75px;
+}
+
+.butt{
+    height: 50px;
+    width: 50px;
+}
+
+.butt:hover{
+    cursor: pointer;
+}
+
+.FBLike{
+    float: left;
+    background-color: blue;
+}
+
+.TwitterLike{
+    float: left;
+    background-color: rgb(0, 255, 234);
+}
+
+.Comments{
+    float: left;
+    height: 50px;
+    width: 100px;
+    color: black;
+}
+
+.Comments p{
+    position: relative;
+    top: 14px;
+}
+
+.Comments p:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+.DatePosted{
+    float: right;
+    height: 50px;
+    width: 150px;
+    color: rgb(156, 156, 156);
+}
+
+.DatePosted p{
+    position: relative;
+    top: 14px;
+}
+
+
+.squareLink{
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    width: 350px;
+    height: 300px;
+    opacity: 0.5;
+    overflow: hidden;
+    border: 2px solid rgb(59, 114, 202);
+    border-radius: 3px;
+    color: black;
+    text-align: center;
+}
+
+.homeRow{
+    margin-top: 225px;
+}
+
+.squareIcon{
+    position: relative;
+    float: right;
+    width: 75px;
+    height: 35px;
+    background-color: white;
+    opacity: 0.5;
+    border-bottom: 2px solid rgba(0,0,0,0);
+}
+
+.squareIcon:hover{
+    cursor: pointer;
+    opacity: 1.0;
+    border-bottom: 2px solid rgb(118, 50, 63);
+}
+
+
+
+.squareIcon img{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 33px;
+    height: 33px;
+    margin: 0 auto;
+    
+}
+
+.squareLink h2{
+    color: color;
+    text-align: center;
+}
+
+.squareLink p{
+    position: relative;
+    display: inline-block;
+    color: black;
+}
+
+.squareLink:hover{
+    cursor: pointer;
+    opacity: 1.0;
+}
+
+.squareLink:hover p{
+    animation: fadein 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein{
+    0%{
+        display: none;
+    }
+    100%{
+        display: none;
+    }
+}
+
+.squareLinkImage{
+    position: relative;
+    top: -30px;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    filter: blur(5px);
+}
+
+.squareLinkImage:hover{
+    filter: blur(0px);
+}
+
+.squareLinkImage img{
+    position: relative;
+    width: 100%;
+    height: auto;
+    
+}
+
+.squareLinkTop{
+    position: relative;
+    top: -20px;
+    border-bottom: 2px solid rgb(59, 114, 202);
+    color: black;
+}
+
+.green-border{
+    border: 1px solid green;
+}
+
+.navButton{
+    position: relative;
+    float: right;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
+
+.navButton:hover{
+    cursor: pointer;
+    color: #1A2930;
+}
+
+.navButton h3{
+    position: relative;
+    top: -28px;
+}
+
+.footer{
+    display: none;
+    position: absolute;
+    bottom: -200px;
+    height: 200px;
+    width: 100%;
+    background-color: rgb(0, 0, 41);
+}
+
+.p-editor-container{
+    min-width: 720px;
+    min-height: 720px;
+    height: 100%;
+    height: auto;
+}
+
+.p-editor-top{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+.pages{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 20px;
+}
+
+.page{
+    position: relative;
+    top: 0px;
+    float: left;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.page:hover{
+    cursor: pointer;
+    background-color: green;
+}
+
+.tag{
+    position: relative;
+    top: 0px;
+    float: left;
+    width: 100px;
+    height: 50px;
+    background-color: grey;
+    border-right: 1px solid rgb(92, 92, 92);
+    border-left: 1px solid rgb(92, 92, 92);
+}
+
+.tag:hover{
+    cursor: pointer;
+    background-color: rgb(185, 185, 185);
+}
+
+.edit-content{
+    font-family: Monospace;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    min-width: 720px;
+    min-height: 500px;
+    height: auto;
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: rgb(187, 187, 187);
+    background-color: rgb(32, 32, 32);
+}
+
+.text-highlight{
+    color: rgb(197, 79, 102);
+}
+
+.prev-content{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    min-width: 720px;
+    min-height: 500px;
+    height: auto;
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#editorcontent{
+    display: block;
+    border: 1px solid red;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    
+}
+
+#prevcontent{
+    display: none;
+    border: 1px solid green;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.prev-content img{
+    max-width: 100%;
+    height: auto;
+}
+
+.prev-content h1{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.prev-content h1{
+    position: relative;
+    border-bottom: 1px solid rgb(201, 201, 201);
+    width: auto;
+}
+
+.prev-content h3{
+    color: white;
+    background-color: rgb(118, 50, 63);
+    padding: 2px;
+}
+
+.p-selected{
+    background-color: green;
+}
+
+.p-unselected{
+    background-color: black;
+}
+
+.tc-green{
+    color: green;
+}
+
+.tc-blue{
+    color: blue;
+}
+
+.caption{
+    text-align: center;
+    font-size: 12px;
+    color: rgb(119, 119, 119);
+}
+
+.quote{
+    padding: 15px;
+    font-style: italic;
+    text-align: center;
+    color: rgb(118, 50, 63);
+    border-top: 1px solid rgb(118, 50, 63);
+    border-bottom: 1px solid rgb(118, 50, 63);
+}
+
+.quote h2{
+    position: relative;
+    top: -3px;
+}
+
+iframe{
+    display: block;
+    width: 720px;
+    height: 480px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+code{
+    white-space: pre-wrap;
+    background-color: rgb(32, 32, 32);
+}
+
+.code{
+    padding: 5px;
+    background-color: rgb(32, 32, 32);
+    border-radius: 5px;
+}
+
+.gal-thumb{
+    display: inline-block;
+    margin: 0 auto;
+    height: 200px;
+    width: auto;
+    max-height: 200px;
+    border: 1px solid transparent;
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+.gal-thumb:hover{
+    cursor: pointer;
+    border: 1px solid transparent;
+    opacity: 1.0;
+
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background-color: rgb(218, 218, 218);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.image-gallery-hidden{
+    position: fixed;
+    margin: 0 auto;
+    left: 0px;
+    top: 50px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(36, 36, 36, 0.9);
+    display: none;
+    z-index: 500;
+    transition: all 0.5s;
+}
+.image-gallery-show{
+    position: fixed;
+    margin: 0 auto;
+    left: 0px;
+    top: 50px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(36, 36, 36, 0.9);
+    display: block;
+    z-index: 500;
+    transition: all 0.5s;
+}
+
+.image-gallery-sel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.image-gallery-sel img{
+    position: relative;
+    top: 60px;
+    height: 600px;
+    width: auto;
+    transition: all 0.5s;
+}
+
+.image-gallery-top{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+}
+
+.image-gallery-top h2{
+    float: right;
+    color: white;
+}
+
+.image-gallery-top h2:hover{
+    background-color: rgb(118, 50, 63);
+    cursor: pointer;
+}
+
+.image-gallery-roll{
+    position: relative;
+    bottom: 0px;
+    top: -300px;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    overflow-x: scroll;
+    transition: all 0.5s;
+}
+
+.image-gallery-roll img{
+    opacity: 0.75;
+    transition: all 0.25s;
+}
+
+.image-gallery-roll img:hover{
+    transform: scale(1.01, 1.01);
+    opacity: 1.0;
+}
+
+#anim_text{
+    position: relative;
+    font-size: 52px;
+    top: 150px;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(118, 50, 63);
+    color: white;
+    
+}
+
+#static_text{
+    position: relative;
+    font-size: 52px;
+    top: 155px;
+    width: 100%;
+    height: 50px;
+}
